@@ -12,6 +12,15 @@ module.exports = {
         light: "#A0AABA",
         primary: "#44AF69",
       },
+      backgroundImage: {
+        vannes: "url('../assets/vannes.png')",
+        lim: "url('../assets/lim.png')",
+        kelvin: "url('../assets/kelvin.png')",
+        jodi: "url('../assets/jodi.png')",
+        utap: "url('../assets/utap.png')",
+        un: "url('../assets/un.png')",
+        peve: "url('../assets/peve.png')",
+      },
     },
   },
   variants: {
