@@ -1,8 +1,8 @@
 export const Team = () => {
   return (
-    <div className="bg-dark w-full h-full p-20 text-white flex flex-col items-center">
-      <div className="text-7xl font-semibold mb-5">Our Team</div>
-      <div className="text-4xl font-medium mb-10 text-center">
+    <div className="bg-dark w-full h-full px-20 py-40 text-white flex flex-col items-center">
+      <div className="text-7xl font-semibold mb-10">Our Team</div>
+      <div className="text-4xl font-medium mb-20 text-center">
         We are a team of <span className="text-primary">diverse</span> talents
         who <span className="text-primary">work together as one</span>
         <br /> to build our <span className="text-primary">community</span>
@@ -47,7 +47,7 @@ export const Team = () => {
                   w-56
                   h-64
                   shadow-lg
-                  bg-vannes bg-cover bg-left-top
+                  bg-vabel bg-cover bg-center
                   cursor-pointer
                   group
                   mb-5
@@ -297,7 +297,7 @@ export const Team = () => {
                   w-56
                   h-64
                   shadow-lg
-                  bg-vannes bg-cover bg-left-top
+                  bg-michelle bg-cover bg-center
                   cursor-pointer
                   group
                   mb-5

@@ -20,6 +20,8 @@ module.exports = {
         utap: "url('../assets/utap.png')",
         un: "url('../assets/un.png')",
         peve: "url('../assets/peve.png')",
+        vabel: "url('../assets/vabel.png')",
+        michelle: "url('../assets/michelle.png')",
       },
     },
   },

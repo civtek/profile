@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { About } from "../components/About";
 import { Navbar } from "../components/Navbar";
 import { Team } from "../components/Team";
 import { WhatWeDo } from "../components/WhatWeDo";
@@ -15,9 +14,8 @@ export default function Home() {
       <main className="overflow-hidden h-full flex flex-col">
         <Navbar></Navbar>
         <Landing></Landing>
-        <About></About>
-        <Team></Team>
         <WhatWeDo></WhatWeDo>
+        <Team></Team>
       </main>
     </div>
   );
