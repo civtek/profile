@@ -1,18 +1,25 @@
+import Fade from "react-reveal/Fade";
+
 export const WhatWeDo = () => {
   return (
     <div className="bg-dark w-full h-full px-20 py-40 text-white flex flex-col items-center">
       <div className="w-full h-full bg-cover bg-center">
         <div className="grid grid-cols-3 w-full h-full">
-          <div className="text-8xl text-white font-semibold ml-10 flex flex-col justify-center">
-            What <span className="text-primary">We</span> Do
-          </div>
+          <Fade left cascade>
+            <div className="text-8xl text-white font-semibold ml-10 flex flex-col justify-center">
+              <div>What</div>
+              <div className="text-primary">We</div>
+              <div>Do</div>
+            </div>
+          </Fade>
 
-          <div className="grid grid-rows-2 w-full h-full">
+          <div className="grid grid-rows-2 w-full h-full z-20">
             <div
               className="
-              border border-white 
+              border-2 border-primary 
               flex flex-col
               cursor-pointer
+              group
               hover:bg-primary
               transition
               duration-500
@@ -28,10 +35,11 @@ export const WhatWeDo = () => {
                 py-20
                 flex flex-col
                 justify-center
+                group-hover:text-black
               "
               >
                 <p className="">Projects</p>
-                <p className="text-2xl font-extralight pt-5">
+                <p className="text-2xl font-normal pt-5">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Laboriosam autem inventore laborum nesciunt.
                 </p>
@@ -39,9 +47,10 @@ export const WhatWeDo = () => {
             </div>
             <div
               className="
-              border border-t-0 border-white 
+              border-2 border-t-0 border-primary 
               flex flex-col
               cursor-pointer
+              group
               hover:bg-primary
               transition
               duration-500
@@ -57,10 +66,11 @@ export const WhatWeDo = () => {
                 py-20
                 flex flex-col
                 justify-center
+                group-hover:text-black
               "
               >
                 <p className="">Networking</p>
-                <p className="text-2xl font-extralight pt-5">
+                <p className="text-2xl font-normal pt-5">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Laboriosam autem inventore laborum nesciunt.
                 </p>
@@ -68,12 +78,13 @@ export const WhatWeDo = () => {
             </div>
           </div>
 
-          <div className="grid grid-rows-2 w-full h-full">
+          <div className="grid grid-rows-2 w-full h-full z-20">
             <div
               className="
-              border border-l-0 border-white 
+              border-2 border-l-0 border-primary 
               flex flex-col
               cursor-pointer
+              group
               hover:bg-primary
               transition
               duration-500
@@ -89,10 +100,11 @@ export const WhatWeDo = () => {
                 py-20
                 flex flex-col
                 justify-center
+                group-hover:text-black
               "
               >
                 <p className="">Trainings</p>
-                <p className="text-2xl font-extralight pt-5">
+                <p className="text-2xl font-normal pt-5">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Laboriosam autem inventore laborum nesciunt.
                 </p>
@@ -100,9 +112,10 @@ export const WhatWeDo = () => {
             </div>
             <div
               className="
-              border border-t-0 border-l-0 border-white 
+              border-2 border-t-0 border-l-0 border-primary 
               flex flex-col
               cursor-pointer
+              group
               hover:bg-primary
               transition
               duration-500
@@ -118,10 +131,11 @@ export const WhatWeDo = () => {
                 py-20
                 flex flex-col
                 justify-center
+                group-hover:text-black
               "
               >
                 <p className="">Events</p>
-                <p className="text-2xl font-extralight pt-5">
+                <p className="text-2xl font-normal pt-5">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
               </div>

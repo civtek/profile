@@ -1,13 +1,19 @@
+import Fade from "react-reveal/Fade";
+
 export const Team = () => {
   return (
     <div className="bg-dark w-full h-full px-20 py-40 text-white flex flex-col items-center">
-      <div className="text-7xl font-semibold mb-10">Our Team</div>
-      <div className="text-4xl font-medium mb-20 text-center">
-        We are a team of <span className="text-primary">diverse</span> talents
-        who <span className="text-primary">work together as one</span>
-        <br /> to build our <span className="text-primary">community</span>
-      </div>
-      <div className="grid grid-rows-2 gap-y-5">
+      <Fade left cascade>
+        <div className="text-7xl font-semibold mb-10">Our Team</div>
+      </Fade>
+      <Fade left cascade>
+        <div className="text-4xl font-medium mb-20 text-center z-20">
+          We are a team of <span className="text-primary">diverse</span> talents
+          who <span className="text-primary">work together as one</span>
+          <br /> to build our <span className="text-primary">community</span>
+        </div>
+      </Fade>
+      <div className="grid grid-rows-2 gap-y-5 z-20">
         <div className="grid grid-cols-5 gap-x-3">
           <div className="flex flex-col items-center">
             <div
