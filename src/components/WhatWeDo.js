@@ -1,6 +1,6 @@
 export const WhatWeDo = () => {
   return (
-    <section className="bg-dark w-full h-full p-20 text-white flex flex-col items-center">
+    <div className="bg-dark w-full h-full p-20 text-white flex flex-col items-center">
       <div className="w-full h-full bg-cover bg-center">
         <div className="grid grid-cols-3 w-full h-full">
           <div className="text-8xl text-white font-semibold ml-10 flex flex-col justify-center">
@@ -129,6 +129,6 @@ export const WhatWeDo = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
