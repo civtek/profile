@@ -1,17 +1,15 @@
-import Fade from "react-reveal/Fade";
+import { Fade } from "./animations/Fade";
 
 export const WhatWeDo = () => {
   return (
     <div className="bg-dark w-full h-full px-20 py-40 text-white flex flex-col items-center">
       <div className="w-full h-full bg-cover bg-center">
         <div className="grid grid-cols-3 w-full h-full">
-          <Fade left cascade>
-            <div className="text-8xl text-white font-semibold ml-10 flex flex-col justify-center">
-              <div>What</div>
-              <div className="text-primary">We</div>
-              <div>Do</div>
-            </div>
-          </Fade>
+          <div className="text-8xl text-white font-semibold ml-10 flex flex-col justify-center z-20">
+            <Fade child="What"></Fade>
+            <Fade child="We" classes="text-primary" delay={0.5}></Fade>
+            <Fade child="Do" delay={1}></Fade>
+          </div>
 
           <div className="grid grid-rows-2 w-full h-full z-20">
             <div

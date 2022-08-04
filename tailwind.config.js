@@ -22,6 +22,7 @@ module.exports = {
         peve: "url('../assets/peve.png')",
         vabel: "url('../assets/vabel.png')",
         michelle: "url('../assets/michelle.png')",
+        stefan: "url('../assets/stefan.png')",
       },
     },
   },
