@@ -3,6 +3,7 @@ import { Navbar } from "../components/Navbar";
 import { Team } from "../components/Team";
 import { WhatWeDo } from "../components/WhatWeDo";
 import { Landing } from "../components/Landing";
+import { Contact } from "../components/Contact";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
@@ -108,6 +109,7 @@ export default function Home() {
         <Landing></Landing>
         <WhatWeDo></WhatWeDo>
         <Team></Team>
+        <Contact></Contact>
       </main>
     </div>
   );

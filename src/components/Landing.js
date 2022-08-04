@@ -3,7 +3,7 @@ import { Fade } from "./animations/Fade";
 
 export const Landing = () => {
   return (
-    <div className="bg-dark w-full h-screen px-20 pt-56 pb-40 text-white flex flex-col items-center justify-center">
+    <div className="bg-dark w-full h-screen px-20 pt-24 pb-40 text-white flex flex-col items-center justify-center">
       <Fade
         child="civtek"
         classes="text-9xl font-semibold mb-5 z-20"
@@ -21,7 +21,7 @@ export const Landing = () => {
           </span>
         }
         delay={1}
-        classes="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900  group bg-primary hover:text-white  "
+        classes="relative inline-flex items-center justify-center cursor-pointer p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900  group bg-primary hover:text-white  "
       ></Fade>
     </div>
   );
