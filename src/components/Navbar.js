@@ -28,8 +28,8 @@ export const Navbar = () => {
           </div>
         </div>
         <div className="flex gap-4 ml-5 ">
-          <p className="text-black text-xl bg-primary py-2 px-6 rounded-lg"></p>
-          <p className="text-black text-xl bg-primary py-2 px-2 rounded-lg"></p>
+          <p className="text-black text-xl border-2 border-primary py-2 px-6 "></p>
+          <p className="text-black text-xl border-2 border-primary py-2 px-2 "></p>
         </div>
       </div>
     </div>
