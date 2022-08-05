@@ -7,6 +7,7 @@ import { Contact } from "../components/Contact";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
+import { About } from "../components/About";
 
 export default function Home() {
   const particlesInit = useCallback(async (engine) => {
@@ -107,6 +108,7 @@ export default function Home() {
           }}
         />
         <Landing></Landing>
+        <About></About>
         <WhatWeDo></WhatWeDo>
         <Team></Team>
         <Contact></Contact>
