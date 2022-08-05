@@ -8,6 +8,7 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 import { About } from "../components/About";
+import { JoinUs } from "../components/JoinUs"
 
 export default function Home() {
   const particlesInit = useCallback(async (engine) => {
@@ -92,7 +93,7 @@ export default function Home() {
                   enable: true,
                   area: 800,
                 },
-                value: 80,
+                value: 40,
               },
               opacity: {
                 value: 0.5,
@@ -111,6 +112,7 @@ export default function Home() {
         <About></About>
         <WhatWeDo></WhatWeDo>
         <Team></Team>
+        <JoinUs></JoinUs>
         <Contact></Contact>
       </main>
     </div>

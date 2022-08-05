@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 export const About = () => {
 
   return (
-    <div className="w-full h-screen flex bg-dark text-white py-20 px-32 z-20">
-      <div className="flex flex-col justify-center gap-5 w-2/5">
+    <div className="w-full h-screen flex flex-col md:flex-row text-white py-20 px-32 z-20">
+      <div className="flex flex-col justify-center gap-5 w-full md:w-1/2">
         <div className="flex gap-4 font-semibold text-6xl mb-4">
           <Fade child="about"></Fade>
           <Fade child="civtek" classes="text-primary" delay={0.5}></Fade>
@@ -32,7 +32,7 @@ export const About = () => {
           <Fade classes="text-xl" delay={1.5} child="civtek is an independent organization led by students from various Hong Kong university, we aim to cultivate students' interests in the various divisions of technology."></Fade>
         </div>
       </div>
-      <div className="w-3/5 p-32">
+      <div className="w-full md:w-1/2 md:px-8 py-8 md:py-16">
         <div className="grid grid-cols-3 gap-8 w-full h-full">
           <motion.div
             initial={{ opacity: 0, y: -200 }}
@@ -44,7 +44,7 @@ export const About = () => {
             viewport={{ once: true }}
           >
           <div className="flex flex-col gap-6 items-center justify-center border-2 h-full border-primary rounded-sm">
-            <p className="text-8xl">0</p>
+            <p className="text-8xl">20</p>
             <p className="text-2xl">members</p>
           </div>
           </motion.div>
@@ -59,7 +59,7 @@ export const About = () => {
             viewport={{ once: true }}
           >
           <div className="flex flex-col gap-6 items-center justify-center border-2 h-full border-primary rounded-sm">
-            <p className="text-8xl">0</p>
+            <p className="text-8xl">7</p>
             <p className="text-2xl">partners</p>
           </div>
           </motion.div>
@@ -74,7 +74,7 @@ export const About = () => {
             viewport={{ once: true }}
           >
           <div className="flex flex-col gap-6 items-center justify-center border-2 h-full border-primary rounded-sm">
-            <p className="text-8xl">0</p>
+            <p className="text-8xl">11</p>
             <p className="text-2xl">products</p>
           </div>
           </motion.div>

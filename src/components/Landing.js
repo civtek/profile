@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Fade } from "./animations/Fade";
 
 export const Landing = () => {
