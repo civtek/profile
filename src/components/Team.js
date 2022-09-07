@@ -16,7 +16,7 @@ export const Team = () => {
         delay={0.5}
       ></Fade>
 
-      <div className="grid grid-rows-2 gap-y-5 z-20">
+      <div className="grid grid-rows-3 gap-y-5 z-20">
         <div className="grid grid-cols-5 gap-x-3">
           <div className="flex flex-col items-center">
             <div
@@ -329,6 +329,111 @@ export const Team = () => {
             </div>
             <div className="font-bold">Michelle Karen</div>
             <div>Advisor</div>
+          </div>
+        </div>
+        <div className="grid grid-cols-5 gap-x-3">
+          <div className="flex flex-col items-center">
+            <div
+              className="
+                    relative
+                    w-56
+                    h-64
+                    mb-5
+                  "
+            ></div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div
+              className="
+                  relative
+                  w-56
+                  h-64
+                  shadow-lg
+                  bg-jason bg-cover bg-center
+                  cursor-pointer
+                  group
+                  mb-5
+                "
+            >
+              <div
+                className="
+                    bg-primary
+                    absolute
+                    opacity-30
+                    w-full
+                    h-full
+                    inset-0
+                    group-hover:opacity-0
+                    transition
+                    duration-500
+                    ease-in-out
+                  "
+              ></div>
+            </div>
+            <div className="font-bold">Jason William Nursalim</div>
+            <div>Software Development Lead</div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div
+              className="
+                  relative
+                  w-56
+                  h-64
+                  shadow-lg
+                  bg-madison bg-cover
+                  cursor-pointer
+                  group
+                  mb-5
+                "
+            >
+              <div
+                className="
+                    bg-primary
+                    absolute
+                    opacity-30
+                    w-full
+                    h-full
+                    inset-0
+                    group-hover:opacity-0
+                    transition
+                    duration-500
+                    ease-in-out
+                  "
+              ></div>
+            </div>
+            <div className="font-bold">Kanokkorn Panatte</div>
+            <div>Product Design Lead</div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div
+              className="
+                  relative
+                  w-56
+                  h-64
+                  shadow-lg
+                  bg-shannon bg-cover
+                  cursor-pointer
+                  group
+                  mb-5
+                "
+            >
+              <div
+                className="
+                    bg-primary
+                    absolute
+                    opacity-30
+                    w-full
+                    h-full
+                    inset-0
+                    group-hover:opacity-0
+                    transition
+                    duration-500
+                    ease-in-out
+                  "
+              ></div>
+            </div>
+            <div className="font-bold">Shannon Sie Santosa</div>
+            <div>Product Design Co-Lead</div>
           </div>
         </div>
       </div>
