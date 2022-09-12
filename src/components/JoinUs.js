@@ -9,7 +9,7 @@ export const JoinUs = () => {
         <Fade classes="flex justify-center items-center" child={
           <div className="flex items-center justify-center flex-col">
             <div className="font-semibold text-7xl text-center py-3">Join Our Journey</div>
-            <div className="text-2xl text-center w-3/5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </div>
+            <div className="text-2xl text-center w-3/5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s. </div>
           </div>
         }></Fade>
 
@@ -35,7 +35,7 @@ export const JoinUs = () => {
             </div>
           </div>
           <div className="text-lg">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
           </div>
           <div className="w-32 flex items-center justify-center px-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
             More
@@ -60,7 +60,7 @@ export const JoinUs = () => {
             </div>
           </div>
           <div className="text-lg">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
           </div>
           <div className="w-32 flex items-center justify-center px-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
             More
@@ -85,7 +85,7 @@ export const JoinUs = () => {
             </div>
           </div>
           <div className="text-lg">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
           </div>
           <div className="w-32 flex items-center justify-center px-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
             More
