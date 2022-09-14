@@ -5,7 +5,7 @@ export const WhatWeDo = () => {
     <div className="bg-dark w-full h-full px-20 py-40 text-white flex flex-col items-center">
       <div className="w-full h-full bg-cover bg-center">
         <div className="grid grid-cols-3 w-full h-full">
-          <div className="text-8xl font-semibold ml-10 flex flex-col justify-center z-20">
+          <div className="text-8xl font-semibold flex flex-col justify-center z-20">
             <Fade child="Our"></Fade>
             <Fade child="Missions" classes="text-primary" delay={0.5}></Fade>
           </div>
