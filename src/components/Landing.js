@@ -15,7 +15,13 @@ export const Landing = () => {
       />
       <Fade
         child={
-          <span className="relative px-5 py-2.5 transition-all delay-100 ease-in-out duration-500 bg-dark text-white text-2xl font-medium  group-hover:bg-opacity-0 group-hover:text-black">
+          <span
+            onClick={() => {
+              const anchor = document.querySelector("#about");
+              anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+            }}
+            className="relative px-5 py-2.5 transition-all delay-100 ease-in-out duration-500 bg-dark text-white text-2xl font-medium  group-hover:bg-opacity-0 group-hover:text-black"
+          >
             Start your journey
           </span>
         }

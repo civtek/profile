@@ -3,11 +3,14 @@ import { motion } from "framer-motion";
 
 export const About = () => {
   return (
-    <div className="w-full h-screen flex flex-col md:flex-row text-white py-20 px-32 z-20">
+    <div
+      id="about"
+      className="w-full h-screen flex flex-col md:flex-row text-white py-20 px-32 z-20"
+    >
       <div className="flex flex-col justify-center gap-5 w-full md:w-1/2">
-        <div className="flex gap-4 font-semibold text-6xl mb-4">
-          <Fade child="About"></Fade>
-          <Fade child="Civtek" classes="text-primary" delay={0.5}></Fade>
+        <div className="flex gap-4 font-semibold text-6xl mb-10">
+          <Fade child="For students,"></Fade>
+          <Fade child="by students." classes="text-primary" delay={0.5}></Fade>
         </div>
         <div className="text-3xl font-medium">
           <motion.div
@@ -29,7 +32,7 @@ export const About = () => {
         </div>
         <div>
           <Fade
-            classes="text-xl mt-5"
+            classes="text-2xl mt-10"
             delay={1.5}
             child="We work with NGOs and groups to help make the world a better place through technology.
 

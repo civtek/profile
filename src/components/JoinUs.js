@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 
 export const JoinUs = () => {
   return (
-    <div className="w-full h-screen relative my-40 text-white flex items-center justify-center">
+    <div
+      id="join"
+      className="w-full h-screen relative my-40 text-white flex items-center justify-center"
+    >
       <div className="absolute w-full h-72  top-0 z-0 flex flex-col items-center justify-center">
         <Fade
           classes="flex justify-center items-center"
@@ -50,8 +53,8 @@ export const JoinUs = () => {
             Our current team members joined JP Morgan, Seabank, Tiket.com and
             other reputable companies.
           </div>
-          <div className="w-32 flex items-center justify-center px-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
-            More
+          <div className="w-40 flex items-center justify-center p-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
+            Coming Soon
           </div>
         </motion.div>
         <motion.div
@@ -79,8 +82,8 @@ export const JoinUs = () => {
             access to all of our upcoming events and a network of talented
             like-minded people.
           </div>
-          <div className="w-32 flex items-center justify-center px-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
-            More
+          <div className="w-40 flex items-center justify-center p-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
+            Coming Soon
           </div>
         </motion.div>
         <motion.div
@@ -110,8 +113,8 @@ export const JoinUs = () => {
             We build impactful products that people love, and we&apos;re sure
             you will love it too.
           </div>
-          <div className="w-32 flex items-center justify-center px-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
-            More
+          <div className="w-40 flex items-center justify-center p-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
+            Coming Soon
           </div>
         </motion.div>
       </div>

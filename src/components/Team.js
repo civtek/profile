@@ -2,7 +2,10 @@ import { Fade } from "./animations/Fade";
 
 export const Team = () => {
   return (
-    <div className="bg-dark w-full h-full px-20 py-40 text-white flex flex-col items-center">
+    <div
+      id="team"
+      className="bg-dark w-full h-full px-20 py-40 text-white flex flex-col items-center"
+    >
       <Fade child="Our Team" classes="text-7xl font-semibold mb-10 z-20"></Fade>
       <Fade
         child={
