@@ -6,9 +6,8 @@ export const WhatWeDo = () => {
       <div className="w-full h-full bg-cover bg-center">
         <div className="grid grid-cols-3 w-full h-full">
           <div className="text-8xl font-semibold ml-10 flex flex-col justify-center z-20">
-            <Fade child="What"></Fade>
-            <Fade child="We" classes="text-primary" delay={0.5}></Fade>
-            <Fade child="Do" delay={1}></Fade>
+            <Fade child="Our"></Fade>
+            <Fade child="Missions" classes="text-primary" delay={0.5}></Fade>
           </div>
 
           <div className="grid grid-rows-2 w-full h-full z-20">
@@ -36,10 +35,10 @@ export const WhatWeDo = () => {
                 group-hover:text-black
               "
               >
-                <p className="">Projects</p>
+                <p className="">Community</p>
                 <p className="text-2xl font-normal pt-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laboriosam autem inventore laborum nesciunt.
+                  Build a solid and active tech community and culture among
+                  students in Hong Kong
                 </p>
               </div>
             </div>
@@ -67,10 +66,11 @@ export const WhatWeDo = () => {
                 group-hover:text-black
               "
               >
-                <p className="">Networking</p>
+                <p className="">Empower</p>
                 <p className="text-2xl font-normal pt-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laboriosam autem inventore laborum nesciunt.
+                  Empower students with technical and soft skills as well as
+                  access needed for professional achievements in the tech
+                  industry
                 </p>
               </div>
             </div>
@@ -101,10 +101,10 @@ export const WhatWeDo = () => {
                 group-hover:text-black
               "
               >
-                <p className="">Trainings</p>
+                <p className="">Impact</p>
                 <p className="text-2xl font-normal pt-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laboriosam autem inventore laborum nesciunt.
+                  Build impactful products which people need and love with the
+                  sole purpose of working for good
                 </p>
               </div>
             </div>
@@ -132,9 +132,11 @@ export const WhatWeDo = () => {
                 group-hover:text-black
               "
               >
-                <p className="">Events</p>
+                <p className="">Experience</p>
                 <p className="text-2xl font-normal pt-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Create a supportive team and learning environment for students
+                  to get hands-on tech experience and encourage their personal
+                  development.
                 </p>
               </div>
             </div>
