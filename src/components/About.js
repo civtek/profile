@@ -5,10 +5,10 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="w-full h-screen flex flex-col md:flex-row text-white py-20 px-32 z-20"
+      className="w-full h-full sm:h-screen flex flex-col sm:flex-row text-white py-20 sm:px-32 px-16 z-20"
     >
-      <div className="flex flex-col justify-center gap-5 w-full md:w-1/2">
-        <div className="flex flex-col font-semibold text-6xl mb-10">
+      <div className="flex flex-col items-center sm:items-start justify-center gap-5 w-full md:w-1/2">
+        <div className="flex flex-col font-semibold text-6xl mb-10 text-center sm:text-left">
           <div>
             <Fade child="For students,"></Fade>
           </div>
@@ -20,7 +20,7 @@ export const About = () => {
             ></Fade>
           </div>
         </div>
-        <div className="text-3xl font-medium">
+        <div className="text-3xl font-medium sm:text-left text-center">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{
@@ -40,7 +40,7 @@ export const About = () => {
         </div>
         <div>
           <Fade
-            classes="text-2xl mt-10"
+            classes="text-2xl mt-10 sm:text-left text-center mb-10 sm:mb-0"
             delay={1.5}
             child="We work with NGOs and groups to help make the world a better place through technology.
 
@@ -48,8 +48,8 @@ export const About = () => {
           ></Fade>
         </div>
       </div>
-      <div className="w-full md:w-1/2 md:px-8 py-8 md:py-16">
-        <div className="grid grid-cols-3 gap-8 w-full h-full">
+      <div className="w-full sm:w-1/2 sm:px-8 py-8 sm:py-16">
+        <div className="grid sm:grid-cols-3 gap-8 w-full h-full">
           <motion.div
             initial={{ opacity: 0, y: -200 }}
             whileInView={{
@@ -59,7 +59,7 @@ export const About = () => {
             }}
             viewport={{ once: true }}
           >
-            <div className="flex flex-col gap-6 items-center justify-center border-2 h-full border-primary rounded-sm">
+            <div className="flex flex-col p-5 sm:p-0 gap-6 items-center justify-center border-2 h-full border-primary rounded-sm">
               <svg
                 width="80"
                 height="80"
@@ -84,7 +84,7 @@ export const About = () => {
             }}
             viewport={{ once: true }}
           >
-            <div className="flex flex-col gap-6 items-center justify-center border-2 h-full border-primary rounded-sm">
+            <div className="flex flex-col p-5 sm:p-0 gap-6 items-center justify-center border-2 h-full border-primary rounded-sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="80"
@@ -107,7 +107,7 @@ export const About = () => {
             }}
             viewport={{ once: true }}
           >
-            <div className="flex flex-col gap-6 items-center justify-center border-2 h-full border-primary rounded-sm">
+            <div className="flex flex-col p-5 sm:p-0 gap-6 items-center justify-center border-2 h-full border-primary rounded-sm">
               <svg
                 width="80"
                 height="80"

@@ -4,11 +4,11 @@ export const WhatWeDo = () => {
   return (
     <div
       id="missions"
-      className="bg-dark w-full h-full px-20 py-40 text-white flex flex-col items-center"
+      className="bg-dark w-full h-full px-16 sm:px-20 py-40 text-white flex flex-col items-center"
     >
       <div className="w-full h-full bg-cover bg-center">
-        <div className="grid grid-cols-3 w-full h-full">
-          <div className="text-8xl font-semibold flex flex-col justify-center z-20">
+        <div className="grid sm:grid-cols-3 w-full h-full">
+          <div className="text-6xl sm:text-8xl font-semibold flex flex-col justify-center z-20 sm:mb-0 mb-20 text-center sm:text-left">
             <Fade child="Our"></Fade>
             <Fade child="Missions" classes="text-primary" delay={0.5}></Fade>
           </div>
@@ -104,7 +104,7 @@ export const WhatWeDo = () => {
           <div className="grid grid-rows-2 w-full h-full z-20">
             <div
               className="
-              border-2 border-l-0 border-primary 
+              border-2 sm:border-l-0 border-primary 
               flex flex-col
               cursor-pointer
               group
@@ -147,7 +147,7 @@ export const WhatWeDo = () => {
             </div>
             <div
               className="
-              border-2 border-t-0 border-l-0 border-primary 
+              border-2 border-t-0 sm:border-l-0 border-primary 
               flex flex-col
               cursor-pointer
               group

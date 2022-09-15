@@ -1,6 +1,6 @@
 export const Navbar = () => {
   return (
-    <div className="w-full h-20 flex items-center px-8 top-0 left-0 right-0 z-50">
+    <div className="w-full h-20 sm:flex hidden items-center px-8 top-0 left-0 right-0 z-50">
       <div className="w-full">
         <p className="font-semibold text-white tracking-wider text-2xl ">
           civtek

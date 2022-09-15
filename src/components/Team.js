@@ -4,9 +4,12 @@ export const Team = () => {
   return (
     <div
       id="team"
-      className="bg-dark w-full h-full px-20 py-40 text-white flex flex-col items-center"
+      className="bg-dark w-full h-full px-16 sm:px-20 py-20 sm:py-40 text-white flex flex-col items-center"
     >
-      <Fade child="Our Team" classes="text-7xl font-semibold mb-10 z-20"></Fade>
+      <Fade
+        child="Our Team"
+        classes="text-6xl sm:text-7xl text-center sm:text-left font-semibold mb-10 z-20"
+      ></Fade>
       <Fade
         child={
           <div className="text-4xl font-medium mb-20 text-center z-20">
@@ -19,8 +22,8 @@ export const Team = () => {
         delay={0.5}
       ></Fade>
 
-      <div className="grid grid-rows-3 gap-y-5 z-20">
-        <div className="grid grid-cols-5 gap-x-3">
+      <div className="grid sm:grid-rows-3 gap-y-5 z-20">
+        <div className="grid sm:grid-cols-5 gap-x-3 sm:gap-y-0 gap-y-10">
           <div className="flex flex-col items-center">
             <div
               className="
@@ -177,7 +180,7 @@ export const Team = () => {
             <div>Product Director</div>
           </div>
         </div>
-        <div className="grid grid-cols-5 gap-x-3">
+        <div className="grid sm:grid-cols-5 gap-x-3 sm:gap-y-0 gap-y-10">
           <div className="flex flex-col items-center">
             <div
               className="
@@ -334,8 +337,8 @@ export const Team = () => {
             <div>Advisor</div>
           </div>
         </div>
-        <div className="grid grid-cols-5 gap-x-3">
-          <div className="flex flex-col items-center">
+        <div className="sm:grid sm:grid-cols-5 flex flex-col gap-x-3 sm:gap-y-0 gap-y-10">
+          <div className="hidden sm:flex flex-col items-center">
             <div
               className="
                     relative

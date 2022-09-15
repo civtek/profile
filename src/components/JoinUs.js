@@ -5,17 +5,17 @@ export const JoinUs = () => {
   return (
     <div
       id="join"
-      className="w-full h-screen relative my-40 text-white flex items-center justify-center"
+      className="w-full h-full sm:h-screen relative my-20 sm:my-40 text-white flex flex-col items-center justify-center"
     >
-      <div className="absolute w-full h-72  top-0 z-0 flex flex-col items-center justify-center">
+      <div className="sm:absolute w-full h-full sm:h-72 sm:top-0 z-0 flex flex-col items-center justify-center">
         <Fade
           classes="flex justify-center items-center"
           child={
             <div className="flex items-center justify-center flex-col">
-              <div className="font-semibold text-7xl text-center py-3">
+              <div className="font-semibold text-6xl sm:text-7xl text-center py-3">
                 Join Our Journey
               </div>
-              <div className="text-4xl mb-48 font-medium text-center w-3/5 mt-10">
+              <div className="text-3xl sm:text-4xl sm:mb-48 font-medium text-center w-3/5 mt-10">
                 Become a part of our <span className="text-primary">novel</span>{" "}
                 and <span className="text-primary">noble</span> technological
                 endeavour
@@ -25,7 +25,7 @@ export const JoinUs = () => {
         ></Fade>
       </div>
       {/* <div className="absolute w-full h-32 bg-gradient-to-b from-white to-transparent top-0 opacity-20"></div> */}
-      <div className="w-full h-full flex flex-wrap gap-16 items-center justify-center mt-48 z-10">
+      <div className="w-full h-full flex flex-wrap gap-16 items-center justify-center mt-20 sm:mt-48 z-10">
         <motion.div
           initial={{ opacity: 0, y: -200 }}
           whileInView={{

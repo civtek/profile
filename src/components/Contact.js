@@ -4,13 +4,13 @@ export const Contact = () => {
   return (
     <div
       id="contact"
-      className="bg-dark w-full h-screen px-40 pt-40 pb-56 text-white flex flex-col items-center"
+      className="bg-dark w-full h-full sm:h-screen px-16 sm:px-40 pt-40 pb-56 text-white flex flex-col items-center"
     >
-      <div className="border-2 border-primary w-full h-full z-20 p-20 flex flex-col items-center justify-center">
+      <div className="sm:border-2 sm:border-primary w-full h-full z-20 sm:p-20 flex flex-col items-center justify-center">
         <div className="text-7xl font-semibold flex flex-col justify-center">
-          Let&apos;s get in touch !
+          Let&apos;s get in touch!
         </div>
-        <div className="flex flex-row justify-center items-center mt-20 gap-x-10">
+        <div className="flex flex-col sm:flex-row justify-center items-center mt-20 gap-x-10 sm:gap-y-0 gap-y-10">
           <a href="mailto:civtek.dev@gmail.com">
             <button className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900  group bg-primary hover:text-white">
               <span className="relative px-5 py-2.5 transition-all delay-100 ease-in-out duration-500 bg-dark text-white text-2xl font-medium  group-hover:bg-opacity-0 group-hover:text-black">

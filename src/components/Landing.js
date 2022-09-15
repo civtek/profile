@@ -2,15 +2,15 @@ import { Fade } from "./animations/Fade";
 
 export const Landing = () => {
   return (
-    <div className="bg-dark w-full h-screen px-20 pt-24 pb-40 text-white flex flex-col items-center justify-center">
+    <div className="bg-dark w-full h-screen px-20 pt-24 sm:pb-40 text-white flex flex-col items-center justify-center">
       <Fade
         child="civtek"
-        classes="text-9xl font-semibold mb-5 z-20"
+        classes="sm:text-9xl text-7xl font-semibold sm:mb-5 mb-10 z-20"
         delay={0}
       />
       <Fade
         child="building the future of tech."
-        classes="text-6xl font-medium text-primary mb-20 z-20"
+        classes="sm:text-6xl text-4xl font-medium text-primary mb-20 z-20 text-center"
         delay={0.5}
       />
       <Fade
