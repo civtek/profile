@@ -15,7 +15,7 @@ export const JoinUs = () => {
               <div className="font-semibold text-7xl text-center py-3">
                 Join Our Journey
               </div>
-              <div className="text-4xl mb-20 font-medium text-center w-3/5 mt-10">
+              <div className="text-4xl mb-48 font-medium text-center w-3/5 mt-10">
                 Become a part of our <span className="text-primary">novel</span>{" "}
                 and <span className="text-primary">noble</span> technological
                 endeavour
