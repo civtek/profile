@@ -116,7 +116,7 @@ export default function Join() {
                 <label for="email" className="block mb-2 text-sm font-medium text-primary">Email</label>
                 <input type="email" id="email" className="bg-gray-50 border text-dark text-sm rounded-lg block w-full p-2.5" placeholder="name@civtek.dev" required />
               </div>
-              <div className="mb-6 flex flex-row justify-between">
+              <div className="mb-6 flex flex-row justify-between w-full">
                 <div className="w-5/6">
                   <label for="university" className="block mb-2 text-sm font-medium text-primary">University</label>
                   <select id="university" className="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg block w-full p-2.5 ">
@@ -143,33 +143,41 @@ export default function Join() {
               <div className="mb-6">
                   <label for="firstchoice" className="block mb-2 text-sm font-medium text-primary">1st Division Choice</label>
                   <select id="firstchoice" className="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg block w-full p-2.5 ">
-                    <option>CUHK</option>
-                    <option>HKUST</option>
-                    <option>HKU</option>
-                    <option>CityU</option>
-                    <option>PolyU</option>
-                    <option>HKBU</option>
+                    <option>Software Development</option>
+                    <option>Data Science</option>
+                    <option>External Affairs</option>
+                    <option>Creative</option>
+                    <option>Event and Community</option>
                   </select>
                 </div>
 
                 <div className="mb-6">
-                  <label for="firstchoice" className="block mb-2 text-sm font-medium text-primary">1st Division Choice</label>
-                  <select id="firstchoice" className="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg block w-full p-2.5 ">
-                    <option>CUHK</option>
-                    <option>HKUST</option>
-                    <option>HKU</option>
-                    <option>CityU</option>
-                    <option>PolyU</option>
-                    <option>HKBU</option>
+                  <label for="secondchoice" className="block mb-2 text-sm font-medium text-primary">2nd Division Choice</label>
+                  <select id="secondchoice" className="bg-gray-50 border border-gray-300 text-dark text-sm rounded-lg block w-full p-2.5 ">
+                    <option>Software Development</option>
+                    <option>Data Science</option>
+                    <option>External Affairs</option>
+                    <option>Creative</option>
+                    <option>Event and Community</option>
                   </select>
                 </div>
               <div className="mb-6">
                 <label for="message" className="block mb-2 text-sm font-medium text-primary">Why civtek?</label>
-                <textarea id="message" rows="4" className="block p-2.5 w-full border text-sm text-dark bg-gray-50 rounded-lg" placeholder="Leave a comment..."></textarea>
+                <textarea id="message" rows="6" className="block p-2.5 w-full border text-sm text-dark bg-gray-50 rounded-lg" placeholder="Explain why do you want to join civtek..."></textarea>
               </div>
 
               <div className="mb-6">
-                <label className="lock mb-2 text-sm font-medium text-primary rounded-lg" for="cv">Upload file</label>
+                <label for="message" className="block mb-2 text-sm font-medium text-primary">Summarise your goal in the next three years, what’ve you’ve done to accomplish it...</label>
+                <textarea id="message" rows="6" className="block p-2.5 w-full border text-sm text-dark bg-gray-50 rounded-lg" placeholder="Describe your current goals and what have you done to achieve it..."></textarea>
+              </div>
+
+              <div className="mb-6">
+                <label for="message" className="block mb-2 text-sm font-medium text-primary">Do you have any other ongoing commitments(e.g. exchange, internship, other organization.)? If yes, please explain...</label>
+                <textarea id="message" rows="6" className="block p-2.5 w-full border text-sm text-dark bg-gray-50 rounded-lg" placeholder="Describe your other commitments..."></textarea>
+              </div>
+
+              <div className="mb-6">
+                <label className="lock mb-2 text-sm font-medium text-primary rounded-lg" for="cv">Upload your CV here</label>
                 <input className="block w-full text-sm text-dark bg-gray-50 rounded-lg border border-gray-300 cursor-pointer " aria-describedby="cv" id="cv" type="file"/>
               </div>
               <button type="submit" className="text-white bg-dark hover:bg-primary font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Submit</button>
