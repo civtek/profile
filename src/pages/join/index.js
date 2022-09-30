@@ -111,14 +111,14 @@ export default function Join() {
               <div className="mb-6">
                 <label
                   htmlFor="email"
-                  className="block mb-2 text-lg font-medium text-primary"
+                  className="block mb-2 text-lg font-medium text-white"
                 >
                   Full Name
                 </label>
                 <input
                   type="text"
                   id="email"
-                  className="bg-transparent focus:outline-none border-2 border-primary text-primary text-lg font-medium block w-full p-2.5"
+                  className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
                   placeholder="John Doe"
                   required
                 />
@@ -126,14 +126,14 @@ export default function Join() {
               <div className="mb-6">
                 <label
                   htmlFor="email"
-                  className="block mb-2 text-lg font-medium text-primary"
+                  className="block mb-2 text-lg font-medium text-white"
                 >
                   Email
                 </label>
                 <input
                   type="text"
                   id="email"
-                  className="bg-transparent focus:outline-none border-2 border-primary text-primary text-lg font-medium block w-full p-2.5"
+                  className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
                   placeholder="name@civtek.dev"
                   required
                 />
@@ -142,13 +142,13 @@ export default function Join() {
                 <div className="w-5/6">
                   <label
                     htmlFor="university"
-                    className="block mb-2 text-lg font-medium text-primary"
+                    className="block mb-2 text-lg font-medium text-white"
                   >
                     University
                   </label>
                   <select
                     id="university"
-                    className="bg-transparent focus:outline-none border-2 border-primary text-primary text-lg font-medium block w-full p-2.5 "
+                    className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5 "
                   >
                     <option>CUHK</option>
                     <option>HKUST</option>
@@ -162,13 +162,13 @@ export default function Join() {
                 <div>
                   <label
                     htmlFor="years"
-                    className="block mb-2 text-lg font-medium text-primary"
+                    className="block mb-2 text-lg font-medium text-white"
                   >
                     Year of study
                   </label>
                   <select
                     id="years"
-                    className="bg-transparent focus:outline-none border-2 border-primary text-primary text-lg font-medium block w-full p-2.5"
+                    className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
                   >
                     <option>1</option>
                     <option>2</option>
@@ -182,13 +182,13 @@ export default function Join() {
               <div className="mb-6">
                 <label
                   htmlFor="firstchoice"
-                  className="block mb-2 text-lg font-medium text-primary"
+                  className="block mb-2 text-lg font-medium text-white"
                 >
                   1st Division Choice
                 </label>
                 <select
                   id="firstchoice"
-                  className="bg-transparent focus:outline-none border-2 border-primary text-primary text-lg font-medium block w-full p-2.5 "
+                  className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5 "
                 >
                   <option>Software Development</option>
                   <option>Data Science</option>
@@ -201,13 +201,13 @@ export default function Join() {
               <div className="mb-6">
                 <label
                   htmlFor="secondchoice"
-                  className="block mb-2 text-lg font-medium text-primary"
+                  className="block mb-2 text-lg font-medium text-white"
                 >
                   2nd Division Choice
                 </label>
                 <select
                   id="secondchoice"
-                  className="bg-transparent focus:outline-none border-2 border-primary text-primary text-lg font-medium block w-full p-2.5 "
+                  className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5 "
                 >
                   <option>Software Development</option>
                   <option>Data Science</option>
@@ -219,21 +219,21 @@ export default function Join() {
               <div className="mb-6">
                 <label
                   htmlFor="message"
-                  className="block mb-2 text-lg font-medium text-primary"
+                  className="block mb-2 text-lg font-medium text-white"
                 >
                   Why civtek?
                 </label>
                 <textarea
                   id="message"
                   rows="6"
-                  className="bg-transparent focus:outline-none border-2 border-primary text-primary text-lg font-medium block w-full p-2.5"
+                  className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
                   placeholder="Explain why you want to join civtek..."
                 ></textarea>
               </div>
               <div className="mb-6">
                 <label
                   htmlFor="message"
-                  className="block mb-2 text-lg font-medium text-primary"
+                  className="block mb-2 text-lg font-medium text-white"
                 >
                   Summarize your goal in the next three years, and what you’ve
                   done to accomplish it
@@ -241,7 +241,7 @@ export default function Join() {
                 <textarea
                   id="message"
                   rows="6"
-                  className="bg-transparent focus:outline-none border-2 border-primary text-primary text-lg font-medium block w-full p-2.5"
+                  className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
                   placeholder="Describe your current goals and what you have done to achieve them..."
                 ></textarea>
               </div>
@@ -249,7 +249,7 @@ export default function Join() {
               <div className="mb-6">
                 <label
                   htmlFor="message"
-                  className="block mb-2 text-lg font-medium text-primary"
+                  className="block mb-2 text-lg font-medium text-white"
                 >
                   Do you have any other ongoing commitments (e.g. exchange,
                   internship, other organizations, etc.)?
@@ -257,20 +257,20 @@ export default function Join() {
                 <textarea
                   id="message"
                   rows="6"
-                  className="bg-transparent focus:outline-none border-2 border-primary text-primary text-lg font-medium block w-full p-2.5"
+                  className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
                   placeholder="Describe your other commitments..."
                 ></textarea>
               </div>
 
               <div className="mb-6">
                 <label
-                  className="lock mb-2 text-lg font-medium text-primary"
+                  className="lock mb-2 text-lg font-medium text-white"
                   htmlFor="cv"
                 >
                   Upload your CV here
                 </label>
                 <input
-                  className="bg-transparent focus:outline-none border-2 border-primary text-primary text-lg font-medium block w-full p-2.5"
+                  className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
                   aria-describedby="cv"
                   id="cv"
                   type="file"
