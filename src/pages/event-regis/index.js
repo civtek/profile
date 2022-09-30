@@ -2,9 +2,54 @@ import Head from "next/head";
 import { Navbar } from "../../components/Navbar";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 
 export default function EventRegis() {
+  const url = "https://api.civtek.dev/api/gatherings"
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const [university, setUniversity] = useState("");
+  const [year, setYear] = useState();
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    
+    const data = {
+        "fullname": fullName,
+        "email": email,
+        "number": number,
+        "university": university, 
+        "year": year,
+
+    }
+
+    console.log(data)
+    // const data = {
+    //   "fullname": "",
+    //   "email": "",
+    //   "number": "",
+    //   "university": "23", 
+    //   "year": "234",
+    // }
+    const requestOptions = {
+      method: 'POST',
+      headers: { 
+        'Accept': 'application/json',
+        'Content-Type': 'application/json' 
+      },
+      body: JSON.stringify({
+        "data": data
+      })
+    };
+    try{
+      const response = await fetch(url, requestOptions)
+      console.log(response)
+    } catch(err){
+      console.log(err)
+    }
+  }
+
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -123,6 +168,7 @@ export default function EventRegis() {
                   Full Name
                 </label>
                 <input
+                  onChange={(e) => {setFullName(e.target.value)}}
                   type="text"
                   id="email"
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
@@ -140,6 +186,7 @@ export default function EventRegis() {
                 <input
                   type="text"
                   id="email"
+                  onChange={(e) => setEmail(e.target.value)}
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
                   placeholder="name@civtek.dev"
                   required
@@ -155,6 +202,7 @@ export default function EventRegis() {
                 <input
                   type="text"
                   id="email"
+                  onChange={(e) => {setNumber(e.target.value)}}
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
                   placeholder="+85212345678"
                   required
@@ -170,6 +218,7 @@ export default function EventRegis() {
                   </label>
                   <select
                     id="university"
+                    onChange={(e) => {setUniversity(e.target.value)}}
                     className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5 "
                   >
                     <option className="bg-dark">CUHK</option>
@@ -190,6 +239,7 @@ export default function EventRegis() {
                   </label>
                   <select
                     id="years"
+                    onChange={(e) => {setYear(e.target.value)}}
                     className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
                   >
                     <option className="bg-dark">1</option>
@@ -203,8 +253,8 @@ export default function EventRegis() {
               </div>
 
               <button
-                type="submit"
                 className="text-white transition-all delay-100 ease-in-out duration-500 bg-dark hover:bg-primary hover:text-black border-2 border-primary font-medium text-lg w-full sm:w-auto px-5 py-2.5 text-center mt-10"
+                onClick={(e) => {onSubmit(e)}}
               >
                 Submit
               </button>
