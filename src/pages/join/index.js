@@ -150,13 +150,13 @@ export default function Join() {
                     id="university"
                     className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5 "
                   >
-                    <option>CUHK</option>
-                    <option>HKUST</option>
-                    <option>HKU</option>
-                    <option>CityU</option>
-                    <option>PolyU</option>
-                    <option>HKBU</option>
-                    <option>Others</option>
+                    <option className="bg-dark">CUHK</option>
+                    <option className="bg-dark">HKUST</option>
+                    <option className="bg-dark">HKU</option>
+                    <option className="bg-dark">CityU</option>
+                    <option className="bg-dark">PolyU</option>
+                    <option className="bg-dark">HKBU</option>
+                    <option className="bg-dark">Others</option>
                   </select>
                 </div>
                 <div>
@@ -170,12 +170,12 @@ export default function Join() {
                     id="years"
                     className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
                   >
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
+                    <option className="bg-dark">1</option>
+                    <option className="bg-dark">2</option>
+                    <option className="bg-dark">3</option>
+                    <option className="bg-dark">4</option>
+                    <option className="bg-dark">5</option>
+                    <option className="bg-dark">6</option>
                   </select>
                 </div>
               </div>
@@ -190,12 +190,12 @@ export default function Join() {
                   id="firstchoice"
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5 "
                 >
-                  <option>Software Development</option>
-                  <option>Data Science & AI</option>
-                  <option>Product Design</option>
-                  <option>External Affairs</option>
-                  <option>Event & Community</option>
-                  <option>Content Creation</option>
+                  <option className="bg-dark">Software Development</option>
+                  <option className="bg-dark">Data Science & AI</option>
+                  <option className="bg-dark">Product Design</option>
+                  <option className="bg-dark">External Affairs</option>
+                  <option className="bg-dark">Event & Community</option>
+                  <option className="bg-dark">Content Creation</option>
                 </select>
               </div>
 
@@ -210,12 +210,12 @@ export default function Join() {
                   id="secondchoice"
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5 "
                 >
-                  <option>Software Development</option>
-                  <option>Data Science & AI</option>
-                  <option>Product Design</option>
-                  <option>External Affairs</option>
-                  <option>Event & Community</option>
-                  <option>Content Creation</option>
+                  <option className="bg-dark">Software Development</option>
+                  <option className="bg-dark">Data Science & AI</option>
+                  <option className="bg-dark">Product Design</option>
+                  <option className="bg-dark">External Affairs</option>
+                  <option className="bg-dark">Event & Community</option>
+                  <option className="bg-dark">Content Creation</option>
                 </select>
               </div>
               <div className="mb-6">

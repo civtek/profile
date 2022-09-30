@@ -172,13 +172,13 @@ export default function EventRegis() {
                     id="university"
                     className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5 "
                   >
-                    <option>CUHK</option>
-                    <option>HKUST</option>
-                    <option>HKU</option>
-                    <option>CityU</option>
-                    <option>PolyU</option>
-                    <option>HKBU</option>
-                    <option>Others</option>
+                    <option className="bg-dark">CUHK</option>
+                    <option className="bg-dark">HKUST</option>
+                    <option className="bg-dark">HKU</option>
+                    <option className="bg-dark">CityU</option>
+                    <option className="bg-dark">PolyU</option>
+                    <option className="bg-dark">HKBU</option>
+                    <option className="bg-dark">Others</option>
                   </select>
                 </div>
                 <div>
@@ -192,12 +192,12 @@ export default function EventRegis() {
                     id="years"
                     className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
                   >
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
+                    <option className="bg-dark">1</option>
+                    <option className="bg-dark">2</option>
+                    <option className="bg-dark">3</option>
+                    <option className="bg-dark">4</option>
+                    <option className="bg-dark">5</option>
+                    <option className="bg-dark">6</option>
                   </select>
                 </div>
               </div>
