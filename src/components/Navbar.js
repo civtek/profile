@@ -14,27 +14,32 @@ export const Navbar = () => {
         <div className="flex items-center">
           <Link href="/?scroll=about">
             <div className="flex items-center cursor-pointer text-white tracking-wider text-xl h-20 px-6 text-center transition delay-100 ease-in-out duration-500  hover:bg-primary hover:text-black">
-              <p>about</p>
+              <p>About</p>
             </div>
           </Link>
           <Link href="/?scroll=missions">
             <div className="flex items-center cursor-pointer text-white tracking-wider text-xl h-20 px-6 text-center transition delay-100 ease-in-out duration-500 hover:bg-primary hover:text-black">
-              <p>missions</p>
+              <p>Missions</p>
             </div>
           </Link>
           <Link href="/?scroll=team">
             <div className="flex items-center cursor-pointer text-white tracking-wider text-xl h-20 px-6 text-center transition delay-100 ease-in-out duration-500 hover:bg-primary hover:text-black">
-              <p>team</p>
+              <p>Our Team</p>
+            </div>
+          </Link>
+          <Link href="/?scroll=divisions">
+            <div className="flex items-center cursor-pointer text-white tracking-wider text-xl h-20 px-6 text-center transition delay-100 ease-in-out duration-500 hover:bg-primary hover:text-black">
+              <p>Divisions</p>
             </div>
           </Link>
           <Link href="/?scroll=join">
             <div className="flex items-center cursor-pointer text-white tracking-wider text-xl h-20 px-6 text-center transition delay-100 ease-in-out duration-500 hover:bg-primary hover:text-black">
-              <p>join us</p>
+              <p>Join Us</p>
             </div>
           </Link>
           <Link href="/?scroll=contact">
             <div className="flex items-center cursor-pointer text-white tracking-wider text-xl h-20 px-6 text-center transition delay-100 ease-in-out duration-500 hover:bg-primary hover:text-black">
-              <p>contact</p>
+              <p>Contact</p>
             </div>
           </Link>
         </div>

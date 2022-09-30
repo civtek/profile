@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Navbar } from "../components/Navbar";
 import { Team } from "../components/Team";
 import { Missions } from "../components/Missions";
+import { Divisions } from "../components/Divisions";
 import { Landing } from "../components/Landing";
 import { Contact } from "../components/Contact";
 import Particles from "react-particles";
@@ -126,6 +127,7 @@ export default function Home() {
         <About></About>
         <Missions></Missions>
         <Team></Team>
+        <Divisions></Divisions>
         <JoinUs></JoinUs>
         <Contact></Contact>
       </main>

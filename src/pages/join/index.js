@@ -191,10 +191,11 @@ export default function Join() {
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5 "
                 >
                   <option>Software Development</option>
-                  <option>Data Science</option>
+                  <option>Data Science & AI</option>
+                  <option>Product Design</option>
                   <option>External Affairs</option>
+                  <option>Event & Community</option>
                   <option>Content Creation</option>
-                  <option>Event and Community</option>
                 </select>
               </div>
 
@@ -210,10 +211,11 @@ export default function Join() {
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5 "
                 >
                   <option>Software Development</option>
-                  <option>Data Science</option>
+                  <option>Data Science & AI</option>
+                  <option>Product Design</option>
                   <option>External Affairs</option>
+                  <option>Event & Community</option>
                   <option>Content Creation</option>
-                  <option>Event and Community</option>
                 </select>
               </div>
               <div className="mb-6">
