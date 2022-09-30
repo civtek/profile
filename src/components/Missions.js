@@ -1,6 +1,6 @@
 import { Fade } from "./animations/Fade";
 
-export const WhatWeDo = () => {
+export const Missions = () => {
   return (
     <div
       id="missions"

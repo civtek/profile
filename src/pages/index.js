@@ -1,14 +1,14 @@
 import Head from "next/head";
 import { Navbar } from "../components/Navbar";
 import { Team } from "../components/Team";
-import { WhatWeDo } from "../components/WhatWeDo";
+import { Missions } from "../components/Missions";
 import { Landing } from "../components/Landing";
 import { Contact } from "../components/Contact";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 import { About } from "../components/About";
-import { JoinUs } from "../components/JoinUs"
+import { JoinUs } from "../components/JoinUs";
 
 export default function Home() {
   const particlesInit = useCallback(async (engine) => {
@@ -110,7 +110,7 @@ export default function Home() {
         />
         <Landing></Landing>
         <About></About>
-        <WhatWeDo></WhatWeDo>
+        <Missions></Missions>
         <Team></Team>
         <JoinUs></JoinUs>
         <Contact></Contact>
