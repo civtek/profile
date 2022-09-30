@@ -1,10 +1,12 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { Navbar } from "../../components/Navbar";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 
 export default function Join() {
+  const router = useRouter()
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -14,8 +16,84 @@ export default function Join() {
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
+    console.log(container);
   }, []);
+
+  const [fullname, setFullname ] = useState("")
+  const [email, setEmail ] = useState("")
+  const [university, setUniversity ] = useState("")
+  const [year, setYear ] = useState(0)
+  const [firstchoice, setFirstChoice ] = useState("")
+  const [secondchoice, setSecondChoice ] = useState("")
+  const [firstquestion, setFirstQuestion ] = useState("")
+  const [secondquestion, setSecondQuestion ] = useState("")
+  const [commitments, setCommitments ] = useState("")
+  const [file, setFile ] = useState("")
+
+  const fullnameHandler = e => {
+    setFullname(e.target.value)
+  }
+
+  const emailHandler = e => {
+    setEmail(e.target.value)
+  }
+
+  const yearHandler = e => {
+    setYear(e.target.value)
+  }
+
+  const universityHandler = e => {
+    setUniversity(e.target.value)
+  }
+
+  const firstChoiceHandler = e => {
+    setFirstChoice(e.target.value)
+  }
+
+  const secondChoiceHandler = e => {
+    setSecondChoice(e.target.value)
+  }
+  
+  const firstQuestionHandler = e => {
+    setFirstQuestion(e.target.value)
+  }
+
+  const secondQuestionHandler = e => {
+    setSecondQuestion(e.target.value)
+  }
+
+  const commitmentsHandler = e => {
+    setCommitments(e.target.value)
+  }
+
+  const fileHandler = e => {
+    setFile(e.target.files[0])
+  }
+
+  const submitHandler = async (e) => {
+    e.preventDefault()
+
+    const url = "https://api.civtek.dev/api/applicants"
+    const data = {}
+    const formData = new FormData()
+
+    data["fullname"] = fullname,
+    data["email"] = email,
+    data["university"] = university,
+    data["year"] = year,
+    data["firstchoice"] = firstchoice,
+    data["secondchoice"] = secondchoice,
+    data["firstquestion"] = firstquestion,
+    data["secondquestion"] = secondquestion,
+    data["commitments"] = commitments
+
+    formData.append('files.resume', file, file.name)
+    formData.append('data', JSON.stringify(data))
+
+    await fetch(url, { method: "POST", body: formData })
+    await router.push('/complete')
+    
+  }
 
   return (
     <div>
@@ -107,7 +185,7 @@ export default function Join() {
             <span className="text-white">Join our team</span> @ Civtek HQ !
           </div>
           <div className="w-3/4 sm:w-1/2 h-full border-2 border-primary p-8">
-            <form>
+            <form onSubmit={submitHandler}>
               <div className="mb-6">
                 <label
                   htmlFor="email"
@@ -116,6 +194,7 @@ export default function Join() {
                   Full Name
                 </label>
                 <input
+                  value={fullname} onChange={fullnameHandler}
                   type="text"
                   id="email"
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
@@ -131,6 +210,7 @@ export default function Join() {
                   Email
                 </label>
                 <input
+                  value={email} onChange={emailHandler}
                   type="text"
                   id="email"
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
@@ -147,6 +227,7 @@ export default function Join() {
                     University
                   </label>
                   <select
+                    value={university} onChange={universityHandler}
                     id="university"
                     className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5 "
                   >
@@ -167,6 +248,7 @@ export default function Join() {
                     Year of study
                   </label>
                   <select
+                    value={year} onChange={yearHandler}
                     id="years"
                     className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
                   >
@@ -187,9 +269,11 @@ export default function Join() {
                   1st Division Choice
                 </label>
                 <select
+                  value={firstchoice} onChange={firstChoiceHandler}
                   id="firstchoice"
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5 "
                 >
+                  <option className="bg-dark">First Choice</option>
                   <option className="bg-dark">Software Development</option>
                   <option className="bg-dark">Data Science & AI</option>
                   <option className="bg-dark">Product Design</option>
@@ -207,9 +291,11 @@ export default function Join() {
                   2nd Division Choice
                 </label>
                 <select
+                  value={secondchoice} onChange={secondChoiceHandler}
                   id="secondchoice"
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5 "
                 >
+                  <option className="bg-dark">Second Choice</option>
                   <option className="bg-dark">Software Development</option>
                   <option className="bg-dark">Data Science & AI</option>
                   <option className="bg-dark">Product Design</option>
@@ -226,6 +312,7 @@ export default function Join() {
                   Why civtek?
                 </label>
                 <textarea
+                  value={firstquestion} onChange={firstQuestionHandler}
                   id="message"
                   rows="6"
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
@@ -241,6 +328,7 @@ export default function Join() {
                   done to accomplish it
                 </label>
                 <textarea
+                  value={secondquestion} onChange={secondQuestionHandler}
                   id="message"
                   rows="6"
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
@@ -257,6 +345,7 @@ export default function Join() {
                   internship, other organizations, etc.)?
                 </label>
                 <textarea
+                  value={commitments} onChange={commitmentsHandler}
                   id="message"
                   rows="6"
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
@@ -272,6 +361,7 @@ export default function Join() {
                   Upload your CV here
                 </label>
                 <input
+                  onChange={fileHandler}
                   className="bg-transparent focus:outline-none border-2 border-primary text-white text-lg font-medium block w-full p-2.5"
                   aria-describedby="cv"
                   id="cv"

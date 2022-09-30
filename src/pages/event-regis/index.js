@@ -3,8 +3,10 @@ import { Navbar } from "../../components/Navbar";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback, useState } from "react";
+import { useRouter } from "next/router";
 
 export default function EventRegis() {
+  const router = useRouter();
   const url = "https://api.civtek.dev/api/gatherings"
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -45,7 +47,8 @@ export default function EventRegis() {
     try{
       const response = await fetch(url, requestOptions)
       console.log(response)
-    } catch(err){
+      await router.push('/complete')
+  } catch(err){
       console.log(err)
     }
   }
