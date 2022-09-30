@@ -26,6 +26,7 @@ module.exports = {
         jason: "url('../assets/jason.jpeg')",
         madison: "url('../assets/madison.jpeg')",
         shannon: "url('../assets/shannon.jpeg')",
+        event: "url('../assets/event.png')",
       },
     },
   },
