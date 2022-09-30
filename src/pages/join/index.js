@@ -156,6 +156,7 @@ export default function Join() {
                     <option>CityU</option>
                     <option>PolyU</option>
                     <option>HKBU</option>
+                    <option>Others</option>
                   </select>
                 </div>
                 <div>
@@ -226,23 +227,22 @@ export default function Join() {
                   id="message"
                   rows="6"
                   className="bg-transparent focus:outline-none border-2 border-primary text-primary text-lg font-medium block w-full p-2.5"
-                  placeholder="Explain why do you want to join civtek..."
+                  placeholder="Explain why you want to join civtek..."
                 ></textarea>
               </div>
-
               <div className="mb-6">
                 <label
                   htmlFor="message"
                   className="block mb-2 text-lg font-medium text-primary"
                 >
-                  Summarise your goal in the next three years, and what’ve
-                  you’ve done to accomplish it
+                  Summarize your goal in the next three years, and what you’ve
+                  done to accomplish it
                 </label>
                 <textarea
                   id="message"
                   rows="6"
                   className="bg-transparent focus:outline-none border-2 border-primary text-primary text-lg font-medium block w-full p-2.5"
-                  placeholder="Describe your current goals and what have you done to achieve it..."
+                  placeholder="Describe your current goals and what you have done to achieve them..."
                 ></textarea>
               </div>
 
