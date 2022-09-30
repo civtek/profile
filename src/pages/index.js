@@ -6,11 +6,25 @@ import { Landing } from "../components/Landing";
 import { Contact } from "../components/Contact";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { About } from "../components/About";
 import { JoinUs } from "../components/JoinUs";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
+  useEffect(() => {
+    console.log("router query", router.query.scroll);
+    if (router.query.scroll) {
+      let elem = document.querySelector("#" + router.query.scroll);
+      if (elem) {
+        elem.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+  }, [router]);
+
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets

@@ -1,5 +1,6 @@
 import { Fade } from "./animations/Fade";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const JoinUs = () => {
   return (
@@ -53,9 +54,11 @@ export const JoinUs = () => {
             Our current team members joined JP Morgan, Seabank, Tiket.com and
             other reputable companies.
           </div>
-          <div className="w-40 flex items-center justify-center p-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
-            Coming Soon
-          </div>
+          <Link href="/join">
+            <div className="w-40 flex items-center justify-center p-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
+              Apply Now
+            </div>
+          </Link>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: -200 }}

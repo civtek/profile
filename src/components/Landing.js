@@ -2,7 +2,10 @@ import { Fade } from "./animations/Fade";
 
 export const Landing = () => {
   return (
-    <div className="bg-dark w-full h-screen px-20 pt-24 sm:pb-40 text-white flex flex-col items-center justify-center">
+    <div
+      id="landing"
+      className="bg-dark w-full h-screen px-20 pt-24 sm:pb-40 text-white flex flex-col items-center justify-center"
+    >
       <Fade
         child="civtek"
         classes="sm:text-9xl text-7xl font-semibold sm:mb-5 mb-10 z-20"
