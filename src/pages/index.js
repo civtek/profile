@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Navbar } from "../components/Navbar";
 import { Team } from "../components/Team";
+import { Events } from "../components/Events";
 import { Missions } from "../components/Missions";
 import { Divisions } from "../components/Divisions";
 import { Landing } from "../components/Landing";
@@ -126,6 +127,7 @@ export default function Home() {
         <Landing></Landing>
         <About></About>
         <Missions></Missions>
+        <Events></Events>
         <Team></Team>
         <Divisions></Divisions>
         <JoinUs></JoinUs>

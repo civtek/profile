@@ -20,7 +20,7 @@ export const Divisions = () => {
           </div>
         }
       ></Fade>
-      <div className="w-3/4 h-full">
+      <div className="w-full sm:w-3/4 h-full">
         <div className="grid sm:grid-cols-3 w-full h-full">
           <div className="grid grid-rows-2 w-full h-full z-20">
             <div
