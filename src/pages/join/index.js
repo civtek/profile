@@ -103,10 +103,10 @@ export default function Join() {
           }}
         />
         <div className="w-screen h-full z-50 flex flex-col items-center justify-center my-20">
-          <div className="text-primary text-5xl font-semibold w-1/2 mb-20 text-center">
+          <div className="text-primary text-4xl sm:text-5xl font-semibold w-3/4 sm:w-1/2 mb-20 text-center">
             <span className="text-white">Join our team</span> @ Civtek HQ !
           </div>
-          <div className="w-1/2 h-full border-2 border-primary p-8">
+          <div className="w-3/4 sm:w-1/2 h-full border-2 border-primary p-8">
             <form>
               <div className="mb-6">
                 <label
@@ -138,8 +138,8 @@ export default function Join() {
                   required
                 />
               </div>
-              <div className="mb-6 flex flex-row justify-between w-full">
-                <div className="w-5/6">
+              <div className="mb-6 flex flex-col sm:flex-row justify-between w-full">
+                <div className="w-full sm:w-5/6 sm:mb-0 mb-6">
                   <label
                     htmlFor="university"
                     className="block mb-2 text-lg font-medium text-white"
