@@ -94,7 +94,6 @@ export default function Join() {
 
     setLoading(true)
     await fetch(url, { method: "POST", body: formData })
-    setLoading(false)
     await router.push('/complete')
 
   }

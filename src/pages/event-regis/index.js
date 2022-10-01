@@ -50,7 +50,6 @@ export default function EventRegis() {
     try{
       setLoading(true);
       const response = await fetch(url, requestOptions)
-      setLoading(false);
       await router.push('/complete')
   } catch(err){
       console.log(err)
