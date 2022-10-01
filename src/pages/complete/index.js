@@ -118,8 +118,8 @@ export default function Home() {
                 />
                 <div className="h-full border border-primary z-50 flex flex-col items-center justify-center m-20">
                     <div className="text-primary text-4xl sm:text-5xl font-semibold w-3/4 sm:w-1/2 mb-20 h-80 text-center rounded-xl flex flex-col items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-48 h-48 mb-4">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-48 h-48 mb-4">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                         <h1 className="">Thank you for registering</h1>
                     </div>
