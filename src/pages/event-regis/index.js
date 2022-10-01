@@ -8,13 +8,16 @@ import { useRouter } from "next/router";
 export default function EventRegis() {
   const router = useRouter();
   const url = "https://api.civtek.dev/api/gatherings"
+
+  const [loading, setLoading] = useState(false);
+
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
-  const [university, setUniversity] = useState("");
-  const [year, setYear] = useState();
+  const [university, setUniversity] = useState("CUHK");
+  const [year, setYear] = useState("1");
 
-  const onSubmit = async (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
     
     const data = {
@@ -45,8 +48,9 @@ export default function EventRegis() {
       })
     };
     try{
+      setLoading(true);
       const response = await fetch(url, requestOptions)
-      console.log(response)
+      setLoading(false);
       await router.push('/complete')
   } catch(err){
       console.log(err)
@@ -162,7 +166,7 @@ export default function EventRegis() {
             October 8, 2022
           </div>
           <div className="w-3/4 sm:w-1/2 h-full border-2 border-primary p-8">
-            <form>
+            <form onSubmit={submitHandler}>
               <div className="mb-6">
                 <label
                   htmlFor="email"
@@ -255,12 +259,28 @@ export default function EventRegis() {
                 </div>
               </div>
 
-              <button
-                className="text-white transition-all delay-100 ease-in-out duration-500 bg-dark hover:bg-primary hover:text-black border-2 border-primary font-medium text-lg w-full sm:w-auto px-5 py-2.5 text-center mt-10"
-                onClick={(e) => {onSubmit(e)}}
-              >
-                Submit
-              </button>
+              {
+                !loading ? (
+                  <button
+                    type="submit"
+                    className="text-white transition-all delay-100 ease-in-out duration-500 bg-dark hover:bg-primary hover:text-black border-2 border-primary font-medium text-lg w-full sm:w-auto px-5 py-2.5 text-center mt-10"
+                  >
+                    <div className="lg:w-20">
+                      Submit
+                    </div>
+                  </button>
+                ) : (
+                  <button
+                    type="submit"
+                    className="text-white transition-all delay-100 ease-in-out duration-500 bg-dark hover:bg-primary hover:text-black border-2 border-primary font-medium text-lg w-full sm:w-auto px-5 py-2.5 text-center mt-10"
+                  >
+                    <div className="flex flex-col items-center justify-center lg:w-20">
+                      <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-primary hover:border-black"></div>
+                    </div>
+                  </button>
+                )
+              }
+              
             </form>
           </div>
         </div>

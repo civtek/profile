@@ -19,10 +19,12 @@ export default function Join() {
     console.log(container);
   }, []);
 
+  const [loading, setLoading ] = useState(false)
+
   const [fullname, setFullname ] = useState("")
   const [email, setEmail ] = useState("")
-  const [university, setUniversity ] = useState("")
-  const [year, setYear ] = useState(0)
+  const [university, setUniversity ] = useState("CUHK")
+  const [year, setYear ] = useState(1)
   const [firstchoice, setFirstChoice ] = useState("")
   const [secondchoice, setSecondChoice ] = useState("")
   const [firstquestion, setFirstQuestion ] = useState("")
@@ -90,9 +92,11 @@ export default function Join() {
     formData.append('files.resume', file, file.name)
     formData.append('data', JSON.stringify(data))
 
+    setLoading(true)
     await fetch(url, { method: "POST", body: formData })
+    setLoading(false)
     await router.push('/complete')
-    
+
   }
 
   return (
@@ -358,7 +362,7 @@ export default function Join() {
                   className="lock mb-2 text-lg font-medium text-white"
                   htmlFor="cv"
                 >
-                  Upload your CV here
+                  Upload your CV here (.pdf)
                 </label>
                 <input
                   onChange={fileHandler}
@@ -368,12 +372,27 @@ export default function Join() {
                   type="file"
                 />
               </div>
-              <button
-                type="submit"
-                className="text-white transition-all delay-100 ease-in-out duration-500 bg-dark hover:bg-primary hover:text-black border-2 border-primary font-medium text-lg w-full sm:w-auto px-5 py-2.5 text-center mt-10"
-              >
-                Submit
-              </button>
+              {
+                !loading ? (
+                  <button
+                    type="submit"
+                    className="text-white transition-all delay-100 ease-in-out duration-500 bg-dark hover:bg-primary hover:text-black border-2 border-primary font-medium text-lg w-full sm:w-auto px-5 py-2.5 text-center mt-10"
+                  >
+                    <div className="lg:w-20">
+                      Submit
+                    </div>
+                  </button>
+                ) : (
+                  <button
+                    type="submit"
+                    className="text-white transition-all delay-100 ease-in-out duration-500 bg-dark hover:bg-primary hover:text-black border-2 border-primary font-medium text-lg w-full sm:w-auto px-5 py-2.5 text-center mt-10"
+                  >
+                    <div className="flex flex-col items-center justify-center lg:w-20">
+                      <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-primary hover:border-black"></div>
+                    </div>
+                  </button>
+                )
+              }
             </form>
           </div>
         </div>
