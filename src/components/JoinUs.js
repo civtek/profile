@@ -51,8 +51,8 @@ export const JoinUs = () => {
             Become a part of Hong Kong&apos;s student forefront of technology
             and grow with real impactful projects.
             <br /> <br />
-            Our current team members joined JP Morgan, Seabank, Tiket.com and
-            other reputable companies.
+            Our current team members joined Seabank, Tiket.com, Y Combinator
+            Startups, and other reputable companies.
           </div>
           <Link href="/join">
             <div className="w-40 flex items-center justify-center p-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
