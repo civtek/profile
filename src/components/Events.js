@@ -4,7 +4,7 @@ export const Events = () => {
   return (
     <div
       id="events"
-      className="bg-dark w-full h-full sm:h-screen px-40 pt-40 pb-56 text-white flex flex-col items-center"
+      className="bg-dark w-full h-full px-40 pt-40 pb-40 text-white flex flex-col items-center"
     >
       <div className="border-2 border-primary w-full p-40 sm:p-32 z-20 flex flex-col items-center justify-center">
         <div className="font-semibold text-5xl text-center">
