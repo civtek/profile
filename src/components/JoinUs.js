@@ -85,9 +85,11 @@ export const JoinUs = () => {
             access to all of our upcoming events and a network of talented
             like-minded people.
           </div>
-          <div className="w-40 flex items-center justify-center p-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
-            Coming Soon
-          </div>
+          <Link href="/event-regis">
+            <div className="w-40 flex items-center justify-center p-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
+              Register Now
+            </div>
+          </Link>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: -200 }}
