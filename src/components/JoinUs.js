@@ -116,9 +116,11 @@ export const JoinUs = () => {
             We build impactful products that people love, and we&apos;re sure
             you will love it too.
           </div>
-          <div className="w-40 flex items-center justify-center p-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
-            Coming Soon
-          </div>
+          <a href="mailto:civtek.dev@gmail.com">
+            <div className="w-40 flex items-center justify-center p-2 text-lg border border-primary font-medium cursor-pointer hover:bg-primary hover:text-dark transition duration-500 ease-in-out">
+              Get in Touch
+            </div>
+          </a>
         </motion.div>
       </div>
     </div>
