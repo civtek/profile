@@ -31,10 +31,12 @@ export const About = () => {
           >
             <div>
               The first ever all-in-one{" "}
-              <span className="text-primary">not-for-profit</span> software
-              development agency and a{" "}
-              <span className="text-primary">student tech society</span> in Hong
-              Kong
+              <span className="text-primary">501(c)(3)</span> certified
+              nonprofit software development agency and a{" "}
+              <span className="text-primary">
+                cross-uni student tech society
+              </span>{" "}
+              in Hong Kong
             </div>
           </motion.div>
         </div>
